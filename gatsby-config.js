@@ -35,7 +35,14 @@ module.exports = {
         name: 'pages'
       }
     },
-    'gatsby-transformer-remark'
+    'gatsby-transformer-remark',
+    {
+      resolve: "gatsby-source-formspree",
+      options: {
+        form: "YOUR_FORM_ID",
+        key: "YOUR_API_KEY",
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
